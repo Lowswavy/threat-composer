@@ -28,8 +28,8 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-        working-directory: environments/dev
-        
+        working-directory: terraform/environments/dev
+
       - name: Terraform Apply
         run: terraform apply -auto-approve
-        working-directory: environments/dev
+        working-directory: terraform/environments/dev
