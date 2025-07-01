@@ -125,8 +125,7 @@ Once Terraform is applied:
 
 ### 🔍 Live App
 
-![Live App Screenshot](./screenshots/live-app.png)
-
+![image](https://github.com/user-attachments/assets/48ed3366-f104-4d4d-b723-85d8be4af8a5)
 ### 🧱 Architecture Diagram
 
 ```
