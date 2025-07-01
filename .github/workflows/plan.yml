@@ -36,5 +36,5 @@ jobs:
         working-directory: terraform/environments/dev
 
       - name: Terraform Plan
-        run: terraform plan -var="acm_domain_name=tm.ahmedlabs.com" -var="dns_ttl=60"
+        run: terraform plan
         working-directory: terraform/environments/dev
