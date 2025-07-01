@@ -31,5 +31,5 @@ jobs:
         working-directory: terraform/environments/dev
 
       - name: Terraform Apply
-        run: terraform apply -auto-approve -var="acm_domain_name=tm.ahmedlabs.com"
+        run: terraform apply -auto-approve -var="acm_domain_name=tm.ahmedlabs.com" -var="dns_ttl=60"
         working-directory: terraform/environments/dev
