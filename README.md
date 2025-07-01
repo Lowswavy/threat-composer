@@ -121,24 +121,14 @@ Once Terraform is applied:
 
 ---
 
-## 🧾 7. Screenshots & Diagram
+## 🧾 Screenshots & Diagram
 
 ### 🔍 Live App
 
-![image](https://github.com/user-attachments/assets/48ed3366-f104-4d4d-b723-85d8be4af8a5)
-### 🧱 Architecture Diagram
+<img width="1440" alt="Image" src="https://github.com/user-attachments/assets/126a14e0-9271-4035-981d-7b18a3099a55" />
 
-```
-[ User ]
-   ↓ HTTPS
-[ Route53 DNS ]
-   ↓
-[ ALB (HTTPS Listener + ACM) ]
-   ↓
-[ ECS Fargate Service ]
-   ↓
-[ Docker App Container (from ECR) ]
-```
+
+![image](https://github.com/user-attachments/assets/48ed3366-f104-4d4d-b723-85d8be4af8a5)
 
 ---
 
