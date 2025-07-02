@@ -130,6 +130,15 @@ Once Terraform is applied:
 
 ![image](https://github.com/user-attachments/assets/48ed3366-f104-4d4d-b723-85d8be4af8a5)
 
+
+<img width="1057" alt="Image" src="https://github.com/user-attachments/assets/651bb2a9-7b05-47b5-9c27-d7c773eb74fd" />
+
+
+<img width="1058" alt="Image" src="https://github.com/user-attachments/assets/b2b1d444-1a60-401e-9a9a-02eef485b726" />
+
+
+<img width="1052" alt="Image" src="https://github.com/user-attachments/assets/46dd15b0-995d-47d6-b403-bd65fed853f5" />
+
 ---
 
 
