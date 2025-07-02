@@ -128,9 +128,6 @@ Once Terraform is applied:
 <img width="1440" alt="Image" src="https://github.com/user-attachments/assets/126a14e0-9271-4035-981d-7b18a3099a55" />
 
 
-![image](https://github.com/user-attachments/assets/48ed3366-f104-4d4d-b723-85d8be4af8a5)
-
-
 <img width="1057" alt="Image" src="https://github.com/user-attachments/assets/651bb2a9-7b05-47b5-9c27-d7c773eb74fd" />
 
 
