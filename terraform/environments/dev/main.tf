@@ -1,3 +1,10 @@
+data "aws_caller_identity" "current" {}
+
+data "aws_route53_zone" "selected" {
+  name         = "ahmedlabs.com."
+  private_zone = false
+}
+
 module "vpc" {
   source              = "../../modules/vpc"
   name                = "vpc"
@@ -20,7 +27,7 @@ module "ecs" {
   cluster_name       = "ecs"
   name_prefix        = "myapp"
   container_name     = "latest"
-  container_image    = "484923097487.dkr.ecr.eu-west-2.amazonaws.com/ecs-assignment:latest"
+  container_image = "${data.aws_caller_identity.current.account_id}.dkr.ecr.eu-west-2.amazonaws.com/ecs-assignment:latest"
   container_port     = 80
   target_group_arn   = module.alb.target_group_arn
   subnet_ids         = module.vpc.public_subnets
@@ -35,7 +42,7 @@ module "ecs" {
 module "route53" {
   source = "../../modules/route53"
 
-  zone_id      = "Z08188972HB2QHSQ536IA"
+  zone_id       = data.aws_route53_zone.selected.zone_id
   domain_name  = "tm.ahmedlabs.com"
   alb_dns_name = module.alb.dns_name
   alb_zone_id  = module.alb.zone_id
@@ -44,7 +51,7 @@ module "route53" {
 module "acm" {
   source            = "../../modules/acm"
   acm_domain_name   = var.acm_domain_name
-  route53_zone_id   = var.route53_zone_id
+  route53_zone_id   = data.aws_route53_zone.selected.zone_id
   dns_ttl           = var.dns_ttl
   validation_method = var.validation_method
 }
